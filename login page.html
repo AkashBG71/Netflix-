@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Solid dark background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Login Box */
+  .login-box {
+    background: #222;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .login-box input:focus {
+    outline: none;
+    border-color: #e50914;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #b50710;
+  }
+  
+  .btn-secondary {
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #666;
+  }
+  
+  /* Divider */
+  .divider {
+    margin: 15px 0;
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  /* Forgot Password */
+  .forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Options */
+  .options {
+    margin: 15px 0;
+    text-align: left;
+  }
+  
+  .options label {
+    font-size: 14px;
+  }
+  
+  .options .signup-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .options .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Disclaimer */
+  .disclaimer {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #aaa;
+  }
+  
+  .disclaimer a {
+    color: #0071eb;
+    text-decoration: none;
+  }
+  
+  .disclaimer a:hover {
+    text-decoration: underline;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h1>Sign In</h1>
+      <form id="login-form">
+        <div class="input-container">
+            <label for="email">Email or mobile number</label>
+          <input type="text" id="email" required>
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+          <input type="password" id="password" required>
+          
+        </div>
+        <button type="submit" class="btn-primary">Sign In</button>
+        <div class="divider">OR</div>
+        <button type="button" class="btn-secondary">Use a sign-in code</button>
+        <div class="additional-links">
+          <a href="#" class="forgot-password">Forgot password?</a>
+          <div>
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+          <p>New to Netflix? <a href="#" class="sign-up">Sign up now.</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
